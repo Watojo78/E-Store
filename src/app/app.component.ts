@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'wtjoel',
+  selector: 'wtjoel-estore',
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
