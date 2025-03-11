@@ -1,12 +1,46 @@
 {
   "name": "estore",
   "version": "0.0.0",
+  "description": "My EStore Angular project",
+  "author": "Watojo Fokamel <fokamel@lwatojoel.dev>",
+  "homepage": "https://watojoel.dev",
+  "license": "MIT",
+  "contributors": [
+    "Watojo Fokamel <fokamel@lwatojoel.dev>"
+  ],
+  "keywords": [
+    "angular",
+    "angular 19",
+    "angular-starter",
+    "angular starter",
+    "angular-boilerplate",
+    "angular boilerplate",
+    "angular-template",
+    "angular template",
+    "jest",
+    "transloco",
+    "prettier",
+    "cypress",
+    "compodoc",
+    "docker",
+    "eslint",
+    "storybook",
+    "tailwind"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "format": "prettier --write \"src/**/*.{ts,html,scss,css}\" ",
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "prepare": "husky install",
+    "commitlint": "commitlint --edit",
+    "commit-msg": "npm run commitlint -- $GIT_PARAMS",
+    "lint": "eslint src/app/**/*.ts",
+    "prettier": "prettier --write \"src/app/**/*.{js,json,css,scss,less,md,ts,html,component.html,page.html}\"",
+    "test": "jest",
+    "pre-commit": "npm run lint && npm run test"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +53,7 @@
     "@angular/platform-browser-dynamic": "^19.1.0",
     "@angular/router": "^19.1.0",
     "@flaticon/flaticon-uicons": "^3.3.1",
+    "@jsverse/transloco": "^7.5.1",
     "@primeng/themes": "^19.0.9",
     "gsap": "^3.12.7",
     "primelocale": "^2.0.3",
@@ -33,19 +68,40 @@
     "@angular-devkit/build-angular": "^19.1.5",
     "@angular/cli": "^19.1.5",
     "@angular/compiler-cli": "^19.1.0",
-    "@tailwindcss/postcss": "^4.0.11",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@compodoc/compodoc": "^1.1.26",
+    "@tailwindcss/forms": "^0.5.10",
     "@types/jasmine": "~5.1.0",
-    "autoprefixer": "^10.4.20",
+    "@types/jest": "^29.5.14",
+    "@types/json-server": "^0.14.7",
+    "angular-eslint": "19.2.1",
+    "auto-changelog": "^2.5.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
     "husky": "^9.1.7",
     "jasmine-core": "~5.5.0",
+    "jest": "^29.7.0",
+    "jest-preset-angular": "^14.5.3",
+    "json-server": "^0.17.4",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "msw": "^2.7.3",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
-    "tailwindcss": "^4.0.11",
-    "typescript": "~5.7.2"
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "8.26.0"
+  },
+  "lint-staged": {
+    "*.{js,json,css,scss,less,md,ts,html,component.html,page.html}": [
+      "prettier --write"
+    ]
   }
 }
