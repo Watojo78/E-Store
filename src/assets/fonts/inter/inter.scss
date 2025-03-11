@@ -1,61 +1,48 @@
 @font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Italic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
+  font-family: 'InterDisplay';
   font-style: normal;
   font-weight: 500;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Medium.woff') format('woff');
+  src:
+    local('InterDisplay'),
+    url('./InterDisplay-Medium.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Inter';
+  font-family: 'InterDisplay';
   font-style: italic;
   font-weight: 500;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-MediumItalic.woff') format('woff');
+  src:
+    local('InterDisplay'),
+    url('./InterDisplay-MediumItalic.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-SemiBold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-SemiBoldItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Inter';
+  font-family: 'InterDisplay';
   font-style: normal;
   font-weight: 700;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Bold.woff') format('woff');
+  src:
+    local('InterDisplay'),
+    url('./InterDisplay-Bold.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Inter';
+  font-family: 'InterDisplay';
   font-style: italic;
   font-weight: 700;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-BoldItalic.woff') format('woff');
+  src:
+    local('InterDisplay'),
+    url('./InterDisplay-BoldItalic.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Inter';
+  font-family: 'InterDisplay';
   font-style: normal;
   font-weight: 900;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-Black.woff') format('woff');
+  src:
+    local('InterDisplay'),
+    url('./InterDisplay-Black.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Inter';
+  font-family: 'InterDisplay';
   font-style: italic;
   font-weight: 900;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter-BlackItalic.woff') format('woff');
+  src:
+    local('InterDisplay'),
+    url('./InterDisplay-BlackItalic.woff2') format('woff2');
 }
-

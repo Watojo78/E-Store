@@ -1,5 +1,5 @@
-//Tailwind import
-@use "tailwindcss";
+//Tailwind globals import
+@use './globals.css';
 
 //Prime customization & Fonts import
 @use './prime-custom.scss';
@@ -10,7 +10,7 @@
 
 * {
   scroll-behavior: smooth;
-  font-family: "Gilroy-Medium", Inter;
+  font-family: 'Gilroy-Medium', Inter;
 
   &::-webkit-scrollbar {
     display: none;
@@ -51,7 +51,6 @@ h6 {
   margin-block-start: 0;
   margin-block-end: 0;
 }
-
 
 i {
   display: flex;
