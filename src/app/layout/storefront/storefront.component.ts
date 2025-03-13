@@ -1,10 +1,12 @@
 import { ChangeDetectionStrategy, Component, type OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SimplebarAngularModule } from 'simplebar-angular';
+import { StorefrontHeaderComponent } from "../../shared/components/storefront-header/storefront-header.component";
+import { StorefrontFooterComponent } from "../../shared/components/storefront-footer/storefront-footer.component";
 
 @Component({
   selector: 'storefront',
-  imports: [RouterOutlet, SimplebarAngularModule],
+  imports: [RouterOutlet, SimplebarAngularModule, StorefrontHeaderComponent, StorefrontFooterComponent],
   standalone: true,
   templateUrl: './storefront.component.html',
   styleUrl: './storefront.component.scss',
