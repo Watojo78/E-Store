@@ -1,0 +1,12 @@
+{
+  "template": "keepachangelog",
+  "commitLimit": false,
+  "unreleased": true,
+  "startingVersion": "1.0",
+  "issueUrl": "https://github.com/your-username/your-repo/issues/{{id}}",
+  "commitUrl": "https://github.com/your-username/your-repo/commit/{{hash}}",
+  "dateFormat": "D MMMM YYYY",
+  "tagPrefix": "v",
+  "capitalizeTitle": false,
+  "ignoreCommitPattern": "^(chore|docs|test|style|refactor|perf|ci):"
+}
